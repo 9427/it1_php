@@ -23,13 +23,13 @@ $record = mysqli_fetch_assoc($result);
     Имя ученика:
     <input type="text" name="mark_student" value=<?php echo $record['mark_student']; ?>><br>
     Класс:
-	<input type="text" name="mark_student" value=<?php echo $record['mark_class']; ?>><br>
+	<input type="text" name="mark_class" value=<?php echo $record['mark_class']; ?>><br>
 	Предмет:
-	<input type="text" name="mark_student" value=<?php echo $record['mark_subject']; ?>><br>
+	<input type="text" name="mark_subject" value=<?php echo $record['mark_subject']; ?>><br>
 	Учитель:
-	<input type="text" name="mark_student" value=<?php echo $record['mark_teacher']; ?>><br>
+	<input type="text" name="mark_teacher" value=<?php echo $record['mark_teacher']; ?>><br>
 	Оценка:
-	<input type="text" name="mark_student" value=<?php echo $record['mark_value']; ?>><br>
+	<input type="text" name="mark_value" value=<?php echo $record['mark_value']; ?>><br>
     <input type="submit">
 </form>
 
