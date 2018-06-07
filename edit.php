@@ -8,7 +8,7 @@ require_once 'connection.php';
 $link = mysqli_connect($host, $user, $password, $database) 
     or die ("Ошибка:" . mysqli_error());
 
-$mark_id = $_GET["id"];
+$mark_id = $_GET["mark_id"];
 
 $sql ="SELECT mark_student, mark_class, mark_subject, mark_teacher, mark_value
     FROM mark
