@@ -9,8 +9,8 @@
     $subj1 = strtr($_GET['subj'], '*', '*');
 
     echo "<form method='GET' action='search.php'>
-    <p>Введите имя ученика: <input type='text' name='name' placeholder='$name1' value='$name'></p>
-    <p>Введите предмет: <input type='text' name='subj' placeholder='$subj1' value='$subj'></p>
+    <p>Введите имя ученика: <input type='text' name='name' value='$name1'></p>
+    <p>Введите предмет: <input type='text' name='subj' value='$subj1'></p>
     <p><input type='submit' name='enter' value='Поиск'></p>
     </form>";
 
