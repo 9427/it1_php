@@ -4,11 +4,11 @@ require_once 'connection.php';
 $link = mysqli_connect($host, $user, $password, $database) 
     or die ("Ошибка:" . mysqli_error());
 
-$id_record = $_GET['id'];
+$mark_id = $_GET['mark_id'];
 
 $sql = "DELETE
         FROM mark
-        WHERE mark_id='" . $id_record . "';";
+        WHERE mark_id='" . $mark_id . "';";
 
 mysqli_query($link, $sql)
 		
