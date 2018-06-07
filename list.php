@@ -29,8 +29,8 @@ echo "<td>" . $row['mark_class'] . "</td>";
 echo "<td>" . $row['mark_subject'] . "</td>";
 echo "<td>" . $row['mark_teacher'] . "</td>";
 echo "<td>" . $row['mark_value'] . "</td>";
-echo "<td><a href='edit.php?id=" . $row['mark_id'] . "'>edit</a></td>";
-echo "<td><a href='delete.php?id=" . $row['mark_id'] . "'>delete</a></td>";
+echo "<td><a href='edit.php?mark_id=" . $row['mark_id'] . "'>edit</a></td>";
+echo "<td><a href='delete.php?mark_id=" . $row['mark_id'] . "'>delete</a></td>";
 echo "</tr>";
 }
 
