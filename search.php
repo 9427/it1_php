@@ -4,9 +4,6 @@
     $link = mysqli_connect($host, $user, $password, $database) 
     or die ("Ошибка:" . mysqli_error());
 
-    $name = strtr($_GET['name'], '*', '%');
-    $subj = strtr($_GET['subj'], '*', '%');
-
     echo "<form method='GET' action='search.php'>
     <p>Введите имя ученика: <input type='text' name='name' value='$name'></p>
     <p>Введите предмет: <input type='text' name='subj' value='$subj'></p>
@@ -14,7 +11,9 @@
     </form>";
 
     if (isset($_GET['enter']))
-    {
+    {   
+      $name = strtr($_GET['name'], '*', '%');
+      $subj = strtr($_GET['subj'], '*', '%');
       $sql="SELECT mark_student, mark_class, mark_subject, mark_teacher, mark_value
     FROM mark
     WHERE mark_student LIKE '%$name%' AND mark_subject LIKE '%$subj%'";
