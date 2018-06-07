@@ -5,7 +5,7 @@
     or die ("Ошибка:" . mysqli_error());
     $name = strtr($_GET['name'], '*', '%');
     $subj = strtr($_GET['subj'], '*', '%');
-	 $name1 = strtr($_GET['name'], '*', '*');
+    $name1 = strtr($_GET['name'], '*', '*');
     $subj1 = strtr($_GET['subj'], '*', '*');
 
     echo "<form method='GET' action='search.php'>
