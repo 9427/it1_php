@@ -10,7 +10,7 @@ $sql = "DELETE
         FROM mark
         WHERE mark_id='" . $mark_id . "';";
 
-mysqli_query($link, $sql)
+mysqli_query($link, $sql);
 		
 mysqli_close($link);
 
